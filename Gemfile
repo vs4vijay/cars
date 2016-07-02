@@ -26,6 +26,8 @@ gem 'trailblazer'
 gem 'trailblazer-rails'
 gem 'cells'
 
+gem 'slim-rails'
+
 gem 'bootstrap-sass'
 gem 'react-rails', '~> 1.0'
 
