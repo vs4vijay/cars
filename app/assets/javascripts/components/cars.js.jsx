@@ -1,13 +1,14 @@
 var Cars = React.createClass({
   render: function() {
-    // debugger
     return (
-      // <h2> Cars </h2>
-      <ul>
-        {this.props.cars.map(function(car) {
-          return (<li key={car.id}>{car.model}</li>)
-        })}
-      </ul>
+      <div id="cars">
+        <h2> Cars </h2>
+        <ul>
+          {this.props.cars.map(function(car) {
+            return <Car key={car.id} car={car} />
+          })}
+        </ul>
+      </div>
     )
   }
 })
