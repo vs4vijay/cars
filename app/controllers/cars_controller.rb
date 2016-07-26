@@ -5,6 +5,7 @@ class CarsController < ApplicationController
   end
   
   def show
-    render params[:id], status: 200
+    @car = Car.find(params[:id])
+    # render params[:id], status: 200
   end
 end
